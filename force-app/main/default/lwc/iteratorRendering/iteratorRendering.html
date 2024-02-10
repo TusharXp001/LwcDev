@@ -1,0 +1,14 @@
+<template>
+    <lightning-card title="COmplex Object Rendering using iterator" icon-name="custom:custom14">
+      <div class="slds-var-p-around_small">
+      <template iterator:it={contactList}>
+            <div key={it.value.id}>
+                  <div lwc:if={it.first} class="list-first"></div>
+                  <p>{it.value.fname}{it.value.lname}</p>
+                  <div lwc:if={it.last} class="list-last"></div>
+            </div>
+      </template>
+
+      </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,33 @@
+<template>
+    <lightning-card title="Track Decorator"
+     icon-name="custom:custom10"
+     >
+     <div class="slds-p-horizontal_medium">
+     <p  class="slds-p-horizontal_medium">{greeting}</p>
+     <p  class="slds-p-horizontal_medium">{greeting2}</p>
+     <p  class="slds-p-horizontal_medium">{person.fname}</p>
+     <p  class="slds-p-horizontal_medium">{person.lname}</p>
+     <p  class="slds-p-horizontal_medium">{person.age}</p>
+     <p  class="slds-p-horizontal_medium">{mySub}</p>
+     </div>
+
+
+     <lightning-button variant="brand" 
+     label="ChangeText" title="Primary action" 
+     icon-name="standard:announcement"
+     onclick={handleClick} class="slds-m-left_x-small"></lightning-button>
+
+     <lightning-button variant="brand" 
+     label="ChangeList" title="Primary action" 
+     icon-name="standard:announcement"
+     onclick={taskClick} class="slds-m-left_x-small"></lightning-button>
+
+     <lightning-button variant="brand" 
+     label="refreshList" title="Primary action" 
+     icon-name="standard:announcement"
+     onclick={resfreshClick} class="slds-m-left_x-small"></lightning-button>
+
+
+    </lightning-card>
+    
+</template>

@@ -1,0 +1,18 @@
+<template>
+    <lightning-card title="For Each List Rendering" icon-name="custom:custom12">
+      <div class="slds-var-p-around_small">
+      <template for:each={pokemons} for:item="pokemon">
+            <p key={pokemon}>{pokemon}</p>
+      </template>
+      </div>
+    </lightning-card>
+
+
+    <lightning-card title="COmplex List Rendering" icon-name="custom:custom2">
+      <div class="slds-var-p-around_small">
+       <template for:each={contactList} for:item="con">
+            <p key={con.id}>{con.fname}{con.lname}</p>
+       </template>
+      </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,15 @@
+<template>
+    <lightning-card title="Dynamci-CSS" icon-name="custom:custom12">
+      <div class="slds-var-p-around_small">
+            <p class={pColor}>Welcome Everyone</p>
+      </div>
+      <div class="slds-var-p-around_small">
+            <lightning-button variant='brand' label='Add CSS' onclick={addHandler} class='slds-var-p-around_small'>
+            </lightning-button>
+            <lightning-button variant='brand' label='Remove CSS' onclick={removeHandler} class='slds-var-p-around_small'>
+            </lightning-button>
+            <lightning-button variant='brand' label='Toggle CSS' onclick={toggleHandler} class='slds-var-p-around_small'>
+            </lightning-button>
+      </div>
+    </lightning-card>
+</template>

@@ -1,0 +1,3 @@
+.backgroundColor{
+    --slds-c-card-color-background : var(--c-myBackgroundColor);
+}
